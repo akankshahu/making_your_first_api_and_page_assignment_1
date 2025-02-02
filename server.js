@@ -35,6 +35,7 @@ Add the required logic below to complete the API.
 
 
 const PORT = 3000;
+
 app.get('/assistant/greet', (req, res) => {
   const userName = req.query.name || 'Guest';
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -52,6 +53,7 @@ app.get('/assistant/greet', (req, res) => {
     dayMessage: dayMessage
   });
 });
+
 app.listen(PORT, () => {
     console.log(`Virtual Assistant API is running on http://localhost:${PORT}`);
 });
